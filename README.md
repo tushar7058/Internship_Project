@@ -24,27 +24,30 @@ This project implements a chatbot using Natural Language Processing (NLP) techni
 git clone <repository-url>
 cd <repository-directory>
 
-2. Create a Virtual Environment (Optional but Recommended)
+### 2. Create a Virtual Environment (Optional but Recommended)
 python -m venv venv
 # Activate the environment
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-3. Install Required Packages
+
+### 3. Install Required Packages
 pip install -r requirements.txt
 
-4.Download NLTK Data
+### 4. Download NLTK Data
 import nltk
 nltk.download('punkt')
 
+## Usage
 
-Usage
-Run the Chatbot Application
+**Run the Chatbot Application
 streamlit run app.py
 
 
-Customization
 
-Intents Data
+
+## Customization
+
+**Intents Data
 
 The chatbot’s behavior is defined in the intents.json file, which contains:
 	•	Tags: Categories of user input (e.g., “greeting”).
@@ -53,27 +56,26 @@ The chatbot’s behavior is defined in the intents.json file, which contains:
 
 You can modify intents.json to add new tags, patterns, and responses, tailoring the chatbot to your needs.
 
-Conversation History
+**Conversation History
 
 The chatbot logs conversations in a CSV file (chat_log.csv). This can be accessed via the “Conversation History” option in the Streamlit sidebar.
 
-Contribution
+## Contribution
 
 Contributions are welcome! If you have ideas for improvements or new features:
 	1.	Fork this repository.
 	2.	Create a new branch for your feature or fix.
 	3.	Submit a pull request with detailed explanations.
 
-License
+ ## License
 
 This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as per the terms of this license.
 
-Acknowledgments
+ ## Acknowledgments
 	•	NLTK for providing essential NLP tools.
 	•	Scikit-learn for machine learning support.
 	•	Streamlit for enabling a simple and powerful web interface.
 
+## Author
 
-Author
-
-Developed by Tushar kale 
+Developed by Tushar kale.
